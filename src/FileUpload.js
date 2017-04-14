@@ -11,6 +11,7 @@ class FileUpload extends Component {
 	render () {
 		return (
 			<div>
+				Subir Imagen
 				<progress value={this.state.uploadValue} max="100">
 					{this.state.uploadValue} %
 				</progress>

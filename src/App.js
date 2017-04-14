@@ -72,7 +72,7 @@ class App extends Component {
           <div>
             <img width="100" src={this.state.user.photoURL} alt={this.state.user.displayName} />
               <p>
-                Hola {this.state.user.displayName}
+                Hola <strong>{this.state.user.displayName}</strong>
               </p>
               <FileUpload onUpload={ this.handleUpload }/>
               {
@@ -101,8 +101,8 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <h2>Binstagram</h2>
-          <h4> Donde podrás compartir tus imagenes con otras personas.</h4>
+          <h1>Binstagram</h1>
+          <h5> Donde podrás compartir tus imagenes con otras personas</h5>
         </div>
         <p className="App-intro">
           { this.renderLoginButton() }
